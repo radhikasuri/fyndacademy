@@ -12,7 +12,7 @@ html,body{
     height: 100%;
     width: 100vw;
     /* min-height: 100vh; */
-    background-image: url(/bakery/images/IMG_0088.JPG);
+    /* background-image: url(/bakery/images/IMG_0088.JPG); */
     backdrop-filter: blur(-5px);
 }
 /* body::before{
