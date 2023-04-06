@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allerta+Stencil&family=Open+Sans&family=Syncopate&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #ffccff 50%, #80e5ff 50%);
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: -3;
+    width: 8rem;
+    height: 8rem;
+    background: #fff;
+    border-radius: 50%;
+}
+body::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+    z-index: -3;
+    width: 10rem;
+    height: 10rem;
+    background: #fff;
+    border-radius: 50%;
+}
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: .1fr 1fr .1fr;
+    grid-template-rows: .2fr 1fr .3fr;
+    grid-template-areas: "header header header"
+                         "left body right"
+                         "footer footer footer";
+                         grid-gap: 1rem;
+                         padding: 1rem;
+
+    width: 90%;
+    min-height: 85vh;
+    background:  linear-gradient(90deg,#80e5ff 50%, #ffccff 50%);
+    box-shadow: 5px 5px 5px rgba(16, 16, 16, .1),
+                10px 10px 10px rgba(16, 16, 16, .1),
+                15px 15px 15px rgba(16, 16, 16, .1),
+                20px 20px 20px rgba(16, 16, 16, .1),
+                25px 25px 25px rgba(16, 16, 16, .1);
+                overflow: hidden;
+    
+                                           
+}
+.container::before{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: -3.5rem;
+    width: 6rem;
+    height: 6rem;
+    background: #ffccff;
+    border-radius: 50%;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: -4.5rem;
+    right: -4rem;
+    width: 12rem;
+    height: 12rem;
+    background: #80e5ff;
+    border-radius: 50%;
+}
+.container .bg{
+    background: rgba(255, 255, 255, .2);
+}
+.header{
+    grid-area: header;
+}
+.left-content{
+    grid-area: left;
+}
+.main-body{
+    grid-area: body;
+}
+.right-content{
+    grid-area: right;
+}
+.footer{
+    grid-area: footer;
+}
+/* /"HEADER CSS START"/ */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.header .logo img{
+    width: 4rem;
+    height: 5rem;
+}
+.header .navbar li{
+    display: inline-block;
+}
+.header .navbar li a {
+    text-transform: capitalize;
+    color: #fff;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                 2px 2px 2px rgba(16, 16, 16, .1),
+                 3px 3px 3px rgba(16, 16, 16, .1),
+                 4px 4px 4px rgba(16, 16, 16, .1),
+                 5px 5px 5px rgba(16, 16, 16, .1);
+}
+.header .navbar li a:hover{
+    color: #80e5ff;
+    cursor: pointer;
+}
+.header .navbar li .fa{
+    color: #fff;
+    font-size: 3,5rem;
+    padding: 0.2rem;
+    text-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                 2px 2px 2px rgba(16, 16, 16, .1),
+                 3px 3px 3px rgba(16, 16, 16, .1),
+                 4px 4px 4px rgba(16, 16, 16, .1),
+                 5px 5px 5px rgba(16, 16, 16, .1);
+                
+
+}
+.header .navbar .cart{
+    position: relative;
+    z-index: 1;
+}
+.header .navbar .cart span {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #cacaca;
+    box-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                2px 2px 2px rgba(16, 16, 16, .1),
+                3px 3px 3px rgba(16, 16, 16, .1);
+}
+/* HEADER CSS END */
+.left-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-content .icons {
+     position: relative;
+     bottom: 4rem;
+}
+.left-content .icons .fa{
+    margin: 1.5rem;
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                 2px 2px 2px rgba(16, 16, 16, .1),
+                 3px 3px 3px rgba(16, 16, 16, .1),
+                 4px 4px 4px rgba(16, 16, 16, .1),
+                 5px 5px 5px rgba(16, 16, 16, .1);
+                 transition: .3s;
+}
+.left-content .icons .fa:hover{
+   transform: rotate(360deg) scale(1.5);
+   color: #000;
+}
+.left-content .icons span{
+    position: absolute;
+    left: 2.5rem;
+    width: .2rem;
+    height: 8rem;
+    background: #fff;
+    box-shadow: 5px 5px 5px rgba(16, 16, 16, .3);
+}
+/* LEFT CSS END */
+
+/* MAIN BODY START */
+ .main-body{
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.main-body .heading{
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                 2px 2px 2px rgba(16, 16, 16, .1),
+                 3px 3px 3px rgba(16, 16, 16, .1),
+                 4px 4px 4px rgba(16, 16, 16, .1),
+                 5px 5px 5px rgba(16, 16, 16, .1);
+}
+.main-body .heading .h1{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+.main-body .heading .h2 span{
+   font-size: 16rem;
+   letter-spacing: 3rem;
+   text-transform: uppercase;
+   font-family: 'Allerta Stencil', sans-serif;
+
+}
+
+
+
+
+.main-body .heading .h3{
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+/* MAIN BODY END */
+
+
+/* RIGHT CSS START */
+.right-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-content .right{
+    position: relative;
+    top: 4rem;
+
+}
+.right-content .right li{
+    margin: 2rem;
+}
+
+.right-content .right li .fa{
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                 2px 2px 2px rgba(16, 16, 16, .1),
+                 3px 3px 3px rgba(16, 16, 16, .1),
+                 4px 4px 4px rgba(16, 16, 16, .1),
+                 5px 5px 5px rgba(16, 16, 16, .1);
+}
+.right-content .right span{
+    position: absolute;
+    top: -8rem;
+    right: 2.5rem;
+    width: .2rem;
+    height: 8rem;
+    background: #fff;
+    box-shadow: 5px 5px 5px rgba(16,16,16,.3);
+}
+/* RIGHT CSS END */
+
+
+/* FOOTER START */
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .content{
+    position: absolute;
+    top: 1rem;
+}
+.footer .content p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Open sans', sans-serif;
+}
+.footer .content span{
+    position: absolute;
+    left: 46rem;
+    bottom: 1rem;
+    width: 5rem;
+    height: .2rem;
+    background: #fff;
+    box-shadow: 5px 5px 5px rgba(16,16,16,.3);
+}
+.footer .button{
+    position: absolute;
+    bottom: 3rem;
+}
+.footer .button a{
+    background: #fff;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                 2px 2px 2px rgba(16, 16, 16, .1),
+                 3px 3px 3px rgba(16, 16, 16, .1),
+                 4px 4px 4px rgba(16, 16, 16, .1),
+                 5px 5px 5px rgba(16, 16, 16, .1);
+    box-shadow: 1px 1px 1px rgba(16, 16, 16, .1),
+                 2px 2px 2px rgba(16, 16, 16, .1),
+                 3px 3px 3px rgba(16, 16, 16, .1),
+                 4px 4px 4px rgba(16, 16, 16, .1),
+                 5px 5px 5px rgba(16, 16, 16, .1);  
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: 'Open sans', sans-serif;      
+    padding: .5rem 3rem;     
+    border-radius: 2rem;
+
+
+}
+.footer .button a:hover{
+    color: #ffccff;
+    background-color: #80e5ff;
+}
+
+
+
+/* FOOTER END */
+
+/* RESPONSIVE CSS */
+
+@media screen  and (max-width:1024px)
+    {
+        html{
+            font-size: 9.5px;
+        }
+    }
+
+
+@media screen  and (max-width:888px)
+    {
+        html{
+            font-size: 8.5px;
+        }
+    }
+
+
+@media screen  and (max-width:840px)
+    {
+        html{
+            font-size: 7.5px;
+        }
+    }
+
+@media screen  and (max-width:768px)
+    {
+        html{
+            font-size: 7px;
+        }
+    
+
+    body{
+        background: linear-gradient(90deg, #fff 50%, #000 50%);
+    }
+
+    .container{
+        background: linear-gradient(90deg, #000 50%, #fff 50%);
+    }
+    .right-content .right li .fa{
+        color: #000;
+    }
+    .right-content .right span{
+        background: #000;
+    }
+    .header .navbar li a{
+        color: #000;
+    }
+    
+    .h3{
+        color: #000;
+    }
+    .footer .content{
+        color: #000;
+    }
+    .main-body .heading .h2 span{
+        display: flex;
+        flex-direction: column;
+        font-size: 8rem;
+    }
+
+}
+@media screen and (max-width:540px){
+    .header .navbar li a{
+        color: #fff;
+    }
+    .container.bg{
+        backdrop-filter: blur(10px);
+    }
+}
+.donut-img{
+    position: absolute;
+}
+.donut-img img{
+    width: 10rem;
+    height: 10rem;
+    padding: 0 5rem;
+    transform: translateY(-80rem);
+    animation: anime 20s linear infinite;
+    animation-delay: calc(-12s*var(--i));
+    z-index: -2;
+
+}
+@keyframes anime{
+    to{
+        transform: translateY(80rem)rotate(360deg);
+    }
+}
+

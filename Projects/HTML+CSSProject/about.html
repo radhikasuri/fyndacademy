@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Our Page</title>
+    <link rel="stylesheet" href="exploreourpage.css">
+    <link rel="shortcut icon" type="image" href="/bakery/images/IMG_8160.PNG">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;900&family=Poppins:ital,wght@0,200;0,300;1,200&family=Uchen&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="all-content">
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo"><img src="/bakery/images/lo.jfifi" alt="" width="50px">The Sweet Tooth</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="/bakery/images/lo.jfif" alt="" width="30px"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                        Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Cupcakes</a>
+                        <a href="#" class="dropdown-item">Donuts</a>
+                        <a href="#" class="dropdown-item">Macroons</a>
+                        <a href="#" class="dropdown-item">Croissant</a>
+                        <a href="#" class="dropdown-item">Muffins</a>
+                        <a href="#" class="dropdown-item">Cookies</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="icons">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="/>
+             </div>
+        </nav>
+        <div class="home">
+            <div class="content">
+                <h3>LIFE IS SWEETER, <br>SUGAR-FREE
+                    <!-- <br>Cupcakes -->
+                </h3>
+                 <h2><span class="changecontent"></span></h2>
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>Sugar-Free & Diabetic-friendly Bakery
+                   
+                <br> 100% Sugar Free
+            </p>
+            <!-- <a href="#" class="btn">Order Now</a> -->
+            </div>
+            <di class="img">
+                <img src="/bakery/images/22.jff" alt="">
+            </div>
+        </div>
+        <div class="container" id="box">
+            <!-- <div class="content">
+            <h3 class="text-center" Our ></h3> -->
+            <h1 class="text-center">Try our newest creations</h1>
+            <div class="row" style="margin-top:50px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <h3>Cupcakes</h3>
+                        <img src="/bakery/images/cupcakes1.jpg" alt="" >
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <h3>Macroons</h3>
+                        <img src="/bakery/images/macroons.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <h3>Donuts</h3>
+                        <img src="/bakery/images/donuts.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="banner">
+            <div class="content">
+                <h3>Delicious Sweets</h3>
+                <h2>UPTO 50% OFF</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsa?</p><br><br>
+                <div id="btnorder"><button>Order Now</button></div><br><br>
+            </div>
+            <div class="img"><Br>
+                <img src="/bakery/images/IMG_8160.P" alt="" width="10px" > 
+                <!-- <img src="/bakery/images/4.jpg" alt=""> -->
+            </div>
+          </div>
+            <section id="product-cards">
+                <div class="container">
+                    <h1>Menu</h1>
+                    <div class="row" style="margin-top:50px;">
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                        </div>
+                        <img src="/bakery/images/cu1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Cupcakes</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                            <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                        </div>
+                        <img src="/bakery/images/cro.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Croissant</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                            <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                        </div>
+                        <img src="/bakery/images/macroons 2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Macroons</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                            <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                        </div>
+                        <img src="/bakery/images/cooki.jfif" alt="">
+                        <div class="card-body">
+                            <h3>Cookies</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                            <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                        </div>
+                        </div>
+                    </div>
+                  
+                 
+                    </div>
+
+                    <div class="row" style="margin-top:50px;">
+                        <div class="col-md-3 py-3 py-md-0">
+                            <div class="card">
+                            <div class="overlay">
+                                <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                            </div>
+                            <img src="/bakery/images/m.jfif" alt="">
+                            <div class="card-body">
+                                <h3>Muffins</h3>
+                                <div class="star">
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+    
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 py-3 py-md-0">
+                            <div class="card">
+                            <div class="overlay">
+                                <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                            </div>
+                            <img src="/bakery/images/do4.jpg" alt="">
+                            <div class="card-body">
+                                <h3>Donuts</h3>
+                                <div class="star">
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+    
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 py-3 py-md-0">
+                            <div class="card">
+                            <div class="overlay">
+                                <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                            </div>
+                            <img src="/bakery/images/c.jfif" alt="">
+                            <div class="card-body">
+                                <h3>Cheesecakes</h3>
+                                <div class="star">
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+    
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 py-3 py-md-0">
+                            <div class="card">
+                            <div class="overlay">
+                                <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                            </div>
+                            <img src="/bakery/images/pan.jfif" alt="">
+                            <div class="card-body">
+                                <h3>PanCakes</h3>
+                                <div class="star">
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+    
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                            </div>
+                            </div>
+                        </div>
+                      
+                     
+                        </div>
+                </div>
+            </section>
+
+
+
+
+            <section id="product-cards">
+                <div class="container">
+                    <h1>Try Our Sugar Free-Best-Sellers</h1>
+                    <div class="row" style="margin-top:50px;">
+                        <div class="col-md-3 py-3 py-md-0">
+                            <div class="card">
+                            <div class="overlay">
+                                <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                            </div>
+                            <img src="/bakery/images/pa.jfif" alt="">
+                            <div class="card-body">
+                                <h3>CheesePanCakes</h3>
+                                <div class="star">
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star checked"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+    
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="col-md-3 py-3 py-md-0">
+                                <div class="card">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                                </div>
+                                <img src="/bakery/images/cookk.jfif" alt="">
+                                <div class="card-body">
+                                    <h3>CookiesCakes</h3>
+                                    <div class="star">
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+        
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                    <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 py-3 py-md-0">
+                                <div class="card">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                                </div>
+                                <img src="/bakery/images/pie.jfif" alt="">
+                                <div class="card-body">
+                                    <h3>PieCakes</h3>
+                                    <div class="star">
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+        
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                    <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 py-3 py-md-0">
+                                <div class="card">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick View"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII="/></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="></button>
+                                </div>
+                                <img src="/bakery/images/cheese.jfif" alt="">
+                                <div class="card-body">
+                                    <h3>CheeseCakes</h3>
+                                    <div class="star">
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star checked"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+        
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga!</p>
+                                    <h6>$50.10 <span><button>Add to cart</button></span></h6>
+                                </div>
+                                </div>
+                            </div>
+                </div>
+            </section>
+            
+
+     <section id="gallery">
+        <div class="container">
+            <h1>Dishes Specification</h1>
+           
+            <div class="row" style="margin-top: 30px;">
+                <h6 class="text-center">Hover to open the card</h6>
+                    <!-- <h2 class="text-center">Our Most Famous Dishes</h2> -->
+                    <div class="card">
+                        <div class="content">
+                             
+                            <img src="/bakery/images/c.jpg" alt="">
+                            <h3>CupCakes</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum qui dolore veritatis rem voluptatem quas</p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <div class="content">
+                            <h2></h2>
+                            <img src="/bakery/images/d.jpg" alt="">
+                            <h3>Donuts</h3>
+                            <p>A quintessentially old-fashioned fried dessert, crisp  Our low carb donuts are not only keto-friendly but are gluten-free, dairy-free, and paleo. </p>
+                            <a href="bakery.html">Read More</a>
+                        </div>
+                    </div> 
+                       <div class="card">
+                        <div class="content">
+                            <!-- <h2>03</h2> -->
+                            <img src="/bakery/images/macroons 2.jpg" alt="">
+                            <h3>Macrons</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum qui dolore veritatis rem voluptatem quas, tempora eos repudiandae, incidunt, error reprehenderit consectetur corrupti ad laudantium! Sequi rem praesentium id!</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <!-- <h2>03</h2> -->
+                            <img src="/bakery/images/cro.jpg" alt="">
+                            <h3>Croissant</h3>
+                            <p>0% added sugars, This is our new line of delicious wholemeal croissantswith sustainable packaging. In addition, they are without palm fat, colorants or preservatives.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h3 class="text-center">Donuts</h3>
+                            <img src="/bakery/images/muffins.jpg" alt="">
+                            <h3>Muffins</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum qui dolore veritatis rem voluptatem quas, tempora eos repudiandae, incidunt, error reprehenderit consectetur corrupti ad laudantium! Sequi rem praesentium id!</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2></h2>
+                            <img src="/bakery/images/cookies.jpg" alt="">
+                            <h3>Cookies</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum qui dolore veritatis rem voluptatem quas, tempora eos repudiandae, incidunt, error reprehenderit consectetur corrupti ad laudantium! Sequi rem praesentium id!</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        
+                    </div>
+                <!-- <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Donuts</h3>
+                        </div>
+                        <img src="/bakery/images/donuts1.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Donuts</h3>
+                        </div>
+                        <img src="/bakery/images/donuts1.jpg" alt="">
+                    </div>
+                </div>
+               
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Donuts</h3>
+                        </div>
+                        <img src="/bakery/images/donuts1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <div class="overlay">
+                                <h3 class="text-center">Donuts</h3>
+                            </div>
+                            <img src="/bakery/images/donuts1.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <div class="overlay">
+                                <h3 class="text-center">Donuts</h3>
+                            </div>
+                            <img src="/bakery/images/donuts1.jpg" alt="">
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <div class="overlay">
+                                <h3 class="text-center">Donuts</h3>
+                            </div>
+                            <img src="/bakery/images/donuts1.jpg" alt="">
+                        </div>
+                    </div> -->
+            </div>
+            </div>
+        </section>
+
+
+        <!-- <div class="container" id="about"> -->
+            <div id="about">
+            <h1>About Us</h1>
+            <div class="row">
+                <div class="col-md-6 py-3 py-md-0">
+                   
+                        <img src="/bakery/images/ppp.jfif" alt="" width="60%">
+                    
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <p class="text-center">From the Feel Good Food Group, the makers of Ketos of Manila and Eat's Life Manila diet food delivery brands, comes our sweetest brand - The Sugar-Free Bakery!
+First up, you won’t find any ordinary baked goods around here. We’re the type of artisan bakers who don’t like being told “you-can’t-dough-that”, and so we twist our pastries in creatively healthful waysOur mission here is to bake delicious, sugar-free, gluten-free, and low-carb versions of your favorite treats for your guilt-free enjoyment -- whether you’re watching your sugar or not!We have cookies, chocolate mousse, bibingka, keto bread, pizza, low-carb pizzas, sugar-free milk tea and special cakes!
+                    <br><br> <br><br> <br>
+                    Ordering’s a treat too! Just click on the goods you want, and you can conveniently pay via Paypal (which accepts Credit Cards, even without a Paypal account!), G-Cash and Online Bank Transfer (BPI or BDO). We deliver within Metro Manila every Tuesday, Wednesday, and Thursday from our oven door to your front door, so pre-order now to enjoy it solo or to share!
+
+                    Ordering’s a treat too! Just click on the goods you want, and you can conveniently pay via Paypal (which accepts Credit Cards, even without a Paypal account!), G-Cash and Online Bank Transfer (BPI or BDO). We deliver within Metro Manila every Tuesday, Wednesday, and Thursday from our oven door to your front door, so pre-order now to enjoy it solo or to share!
+
+                    At The Sugar-Free Bakery, Life is Sweeter, Sugar-Free!</p>
+                                 <div id="bt"><button>Read more...</button></div>
+                   </div>
+                </div>
+                </div>
+
+<br><BR>
+
+
+
+
+                <div class="container" id="contact">
+                    <h1>Contact Us</h1>
+                    <div class="row">
+                        <div class="col-md-4 py-1 py-md-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-4 py-1 py-md-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="eml" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-4 py-1 py-md-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="phn" placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                         </div>
+                        <br> <div id="messagebtn"><button>Send Message</button> 
+                           </div>
+                        
+                         <footer id="footer">
+                            <h1 class="text-center">The Sweet Tooth</h1>
+                            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, magnam.</p>
+                            <!-- <div class="icons text-center"> -->
+                              
+                                <div class="left-content bg">
+                                    <div class="icons text-center">
+                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-instagram"></i>
+                                        <i class="fa fa-twitter"></i>
+                                        <span></span>
+                                    </div>
+                            </div>
+                            <div class="copyright text-center">
+                                &copy;copyright <strong>The Sweet Tooth</strong> .All Rights Reserved
+                            </div>
+                            <div class="credite text-center">
+                                Designed By <a href="#"><span>Radhika Suri</span></a>
+                            </div>
+                         </footer>
+
+                              <a href="#" class="arrow"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvt1NENgjAUheGfDWQSHUE3wEl1Ax1BJtENNCe5TZpaem8fSEyEJxLo+W5OCwMrX8PK+fwfsLNKX9FqeypS+M2CT0AIiQIp/GDAAwghEaAMT+2EEA/Iw2dgb+np3kVaQBl+BJ4GjMDdwCayBNTCtalvA7RO77jIEjABF0BVaPJ0YnJAVo6cgWt5fFsVCdGE+XEsgYRoiK9wPfQ2uRyoBjS/uQ1wf0k/V5E7cc8x7Q6rLeitqBvdALeyDwxwKhmkDO/5AAAAAElFTkSuQmCC"/></i></a>
+                
+    </div>
+</body>
+</html>

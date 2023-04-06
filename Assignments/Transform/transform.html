@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        margin-bottom:20px;
+      }
+      /************ hover *************/
+      .hover {
+          width: 100px;
+          height: 100px;
+          background: #222;
+        color: white;
+        text-align: center;
+          transition: all 2s ease;
+      }
+      .hover:hover {
+          width: 200px;
+          height: 200px;
+      }
+      
+      /************ active *************/
+      .active {
+          width: 100px;
+          height: 100px;
+          background: #222;
+        color: white;
+        text-align: center;
+          transition: all 2s ease;
+      }
+      .active:active {
+          width: 200px;
+          height: 200px;
+      }
+      
+      /************ focus *************/
+      .focus input, .focus textarea {
+          width: 200px;
+          transition: width 1s ease;
+      }
+      
+      .focus input:focus, .focus textarea:focus {
+          width: 300px;
+      }
+      
+      /************ checked *************/
+      input[type="checkbox"]:checked {
+          height: 20px;
+          transition: all 1s ease;
+      }
+      
+      input[type="checkbox"]:checked {
+          width: 30px;
+      }
+      
+      /************ media *************/
+      .media {
+          width: 200px;
+          height: 200px;
+          background: #222;
+        color: white;
+        text-align: center;
+          transition: width 1s ease;
+      }
+      
+      @media only screen and (max-width : 960px) {
+          .media {
+              width: 100px;
+              height: 100px;
+          }
+      }
+    </style>
+      <body>
+      <h2>hover</h2>
+<div class="hover">:hover</div>
+<hr />
+
+<!-- active -->
+<h2>active</h2>
+<div class="active">:active</div>
+
+<hr />
+
+<!-- focus -->
+<h2>focus</h2>
+<div class="focus">
+  <input type="text" />
+</div>
+<div class="focus">
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+</div>
+
+<hr />
+
+<!-- checked -->
+<h2>checked</h2>
+<div>
+			  <input type="checkbox" name="things" value="thing1"> Input 1<br>
+			  <input type="checkbox" name="things" value="thing2"> Input 2<br>
+			  <input type="checkbox" name="things" value="thing3"> Input 3<br>
+			  <input type="checkbox" name="things" value="thing4"> Input 4<br>
+			</div>
+
+<hr />
+
+<!--media  -->
+<h2>media</h2>
+<div class="media">media</div>
+</head>
+<body>
+    <h1>CSS Transform</h1>
+    <div id="Sidenav" class="sidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </body>
+</html>

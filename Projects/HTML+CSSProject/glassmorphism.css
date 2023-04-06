@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;900&family=Poppins:ital,wght@0,200;0,300;1,200&family=Yanone+Kaffeesatz:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  #80e5ff;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #ffccff 50%, #ffccff 50%);           /*(#f00,#f05); */
+    clip-path: circle(30% at right 70%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffccff 50%, #ffccff 50%);
+    clip-path: circle(20% at 10% 10%);
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    /* background-image: url(/bakery/images/IMG_2063.PNG); */
+   
+}      
+/* .container::before{
+    content: '';
+    position: absolute;
+    bottom: -4.5rem;
+    left: -26rem;
+    width: 12rem;
+    height: 14rem;
+    background: #ffccff;
+    border-radius: 800%;
+    background-image: url(/bakery/images/cu1.jpg);
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: -4.5rem;
+    right: -4rem;
+    width: 12rem;
+    height: 12rem;
+    background: #80e5ff;
+    border-radius: 50%;
+}      */
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px #f77ff7;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    background-image: url(/bakery/images/IMG_0088.JPG);
+}
+    /* background-repeat: no-repeat; */
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);                       
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+    
+
+.container .card .content h2{
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    font-size: 1em;
+    color:  #ffccff;                                   /* rgba(0, 0, 0, 0.5); */
+    pointer-events: none;
+}
+.container .card .content h3{
+    font-size: 1.8em;
+    color:  #f89df8;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 1em;
+    color: black;
+    font-weight: 300;
+}
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #f79cf7;
+    color: #80e5ff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0.5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home{
+width: 100%;
+height: 88.5vh;
+display: flex;
+background-image: linear-gradient(#ffccff,#80e5ff),url(./bakery/images/IMG_0088.JPG);
+background-size: cover;
+/* align-items: center; */
+justify-content: center;
+flex-wrap: wrap;
+position: relative;
+z-index: 0;
+}
+.home .img{
+    flex: 1 1 500px;
+
+}
+.home .img img{
+    width: 80%;
+   margin-top: 20%;
+   margin-right: 80%;
+    
+   
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 50px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fc4ffc;
+}
+.content h2{
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px #f79cf7;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: '';
+    color: #f79cf7;
+    animation: changetext 10s infinite linear;
+    
+   
+}
+@keyframes changetext{
+    0%{content: "Donuts";}
+    20%{content: "CupCakes";}
+    50%{content: "Donuts";}
+    60%{content:"Donuts";}
+    100%{content:"Donuts";}
+}
+.content p{
+    color:white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+@media screen  and (max-width:1024px)
+    {
+        html{
+            font-size: 9.5px;
+        }
+    }
+
+
+@media screen  and (max-width:888px)
+    {
+        html{
+            font-size: 8.5px;
+        }
+    }
+
+
+@media screen  and (max-width:840px)
+    {
+        html{
+            font-size: 7.5px;
+        }
+    }
+
+@media screen  and (max-width:768px)
+    {
+        html{
+            font-size: 7px;
+        }
+    
+
+    body{
+        background: linear-gradient(90deg, #fff 50%, #000 50%);
+    }
+
+    .container{
+        background: linear-gradient(90deg, #000 50%, #fff 50%);
+    }
+    .right-content .right li .fa{
+        color: #000;
+    }
+    .right-content .right span{
+        background: #000;
+    }
+    .header .navbar li a{
+        color: #000;
+    }
+    
+    .h3{
+        color: #000;
+    }
+    .footer .content{
+        color: #000;
+    }
+    .main-body .heading .h2 span{
+        display: flex;
+        flex-direction: column;
+        font-size: 8rem;
+    }
+
+}
+@media screen and (max-width:540px){
+    .header .navbar li a{
+        color: #fff;
+    }
+    .container.bg{
+        backdrop-filter: blur(10px);
+    }
+}
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px #45b9d6;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    background-color: #f591f5;
+    /* backdrop-filter: blur(5px); */
+    
+    
+}
+#box .row{
+    width: 100%;
+    height: 100%;
+    background-image: url(/bakery/images/di.jpg);
+    background-size: cover;
+  
+
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+
+.banner{
+    width: 150%;
+    height: 80vh;
+    display: flex;
+    background-image: linear-gradient(#80e5ff, #ee93ee);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px #e9c0e9;
+    margin-top: 60px;
+    
+}
+.banner .img{
+    flex: 1 1 400px;
+}
+.banner .img img{
+    width: 100%;
+  
+}
+.banner .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.banner .content {
+    color: #f79cf7;
+    font-weight: bold;
+}
+.banner .content h2{
+    font-size: 50px;
+    color: #f79cf7;
+    font-weight: bold;
+    text-shadow: #45b9d6;
+
+}
+.banner .content p{
+    color:#f79cf7;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+#btnorder button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: #db5cdb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#product-cards h1{
+    text-align: centre;
+
+}
+
